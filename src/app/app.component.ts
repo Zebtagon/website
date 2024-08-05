@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
+import { CommonModule } from '@angular/common';
+import { LoginComponent } from './login/login.component';
+import { TictactoeComponent } from './tictactoe/tictactoe.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LoginComponent],
+  imports: [RouterOutlet, 
+    LoginComponent, 
+    TictactoeComponent, 
+    CommonModule
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
   

@@ -1,0 +1,11 @@
+<div class="game-board">
+    <div *ngIf="winner" class="winner">Player {{ winner }} wins!</div>
+    <table>
+      <tr *ngFor="let row of board; let rowIndex = index">
+        <td *ngFor="let cell of row; let colIndex = index" (click)="makeMove(rowIndex, colIndex)">
+          {{ cell }}
+        </td>
+      </tr>
+    </table>
+    <button (click)="resetGame()">Reset Game</button>
+  </div>

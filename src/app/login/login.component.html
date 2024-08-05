@@ -1,0 +1,10 @@
+<div>
+    <div>
+
+        <p-autoComplete [(ngModel)]="searchText" [suggestions]="suggestions"
+            (completeMethod)="true"></p-autoComplete>
+            <h5>Show Password</h5>
+    <p-password [(ngModel)]="searchText" [toggleMask]="true" [mediumRegex]="'(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})'"></p-password>
+    </div>
+
+</div>
