@@ -3,7 +3,7 @@
     <table>
       <tr *ngFor="let row of board; let rowIndex = index">
         <td *ngFor="let cell of row; let colIndex = index" (click)="makeMove(rowIndex, colIndex)">
-          {{ cell }}
+          <p>{{ cell }}</p>
         </td>
       </tr>
     </table>

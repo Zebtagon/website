@@ -1,9 +1,10 @@
 $font-stack: "Ubuntu", sans-serif;
-$primary-color: #333;
+$primary-color: #ffffff;
 
 body{
     font-family: $font-stack;
     color: $primary-color;
     font-weight: 400;
     font-style: normal;
+    background-color: #333;
 }
