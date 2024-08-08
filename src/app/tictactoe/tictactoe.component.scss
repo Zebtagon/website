@@ -7,16 +7,22 @@
   
   table {
     border-collapse: collapse;
+   
   }
   
   td {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     text-align: center;
     vertical-align: middle;
     font-size: 24px;
     border: 1px solid #000;
     cursor: pointer;
+    transition: all ease-in-out 0.2s;
+    &:hover{
+      background-color: rgb(253, 253, 253);
+
+    }
   }
   
   .winner {
